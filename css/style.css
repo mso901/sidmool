@@ -1,7 +1,10 @@
+html{
+  font-size: 10px;
+}
 body{
   font-family: 'Noto Sans KR', sans-serif;
   color: black;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 .inner{
   width: 90%;
@@ -12,6 +15,7 @@ body{
 header{
   width: 100%;
   position: fixed;
+  z-index: 2;
   background-color: transparent;
 }
 
@@ -64,4 +68,94 @@ header.on .mainmenu{
   .main_visual img{
     height: 100vh;
   }
+}
+
+/*main*/
+section{
+  padding: 100px 0;
+}
+h2{
+  padding: 20px 0;
+  text-align: center;
+  font-size: 3.6rem;
+}
+h2+p{
+  padding-bottom: 100px;
+  text-align: center;
+}
+/*best*/
+.best{
+  height: 100vh;
+}
+.best ul div img{
+  width: 300px;
+}
+.item_text{
+
+  text-indent: 50px;
+}
+.item_text p{
+  font-size: 2rem;
+
+}
+.item_text .enlarge{
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+.item_text .enlarge::after{
+  display: block;
+  position: absolute;
+  left: 50px;
+  top: 23px;
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #999;
+  transition: all .3s;
+}
+.item_text .enlarge:hover::after{
+  width: 70px;
+}
+/*recommend*/
+.recommend{
+  padding: 0;
+  background-color: #f9f4f3;
+}
+.recommend .inner{
+  width: 100%;
+  max-width: 1920px;
+}
+.recommend_img {
+  height: auto;
+}
+.recommend .recommend_left{
+  position: sticky;
+  top: 110px;
+  width: 50%;
+  height: 100vh;
+}
+.recommend_left img{
+  width: 100%;
+}
+.recommend_right{
+  width: 50%;
+  padding-bottom: 100px;
+}
+.recommend_text{
+  padding: 20px 40px;
+}
+.recommend_right h3{
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+.recommend_right h3+p{
+  padding: 10px 0;
+} 
+.recommend_right ul{
+  flex-wrap: wrap;
+}
+.recommend_right li{
+  width: calc(100%/2);
 }

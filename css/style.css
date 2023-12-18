@@ -71,7 +71,9 @@ header.on .mainmenu {
     height: 100vh;
   }
 }
-
+p{
+  text-align: center;
+}
 /*main*/
 section {
   padding: 100px 0;
@@ -180,10 +182,10 @@ h2 + p {
   color: #284738;
 }
 .swiper-button-prev {
-  left: 25%;
+  left: 28%;
 }
 .swiper-button-next {
-  left: 85%;
+  left: 74%;
 }
 .swiper-pagination-bullet{
   border: 1px solid #284738;
@@ -194,6 +196,7 @@ h2 + p {
   background-color: #284738;
 }
 .promotion .item_text{
+  justify-content: space-between;
   text-indent: 0;
 }
 .promotion .item_text p{

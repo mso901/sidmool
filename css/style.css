@@ -254,32 +254,34 @@ h2 + p {
   grid-template-columns: repeat(4, 300px);
   gap: 20px;
 }
-.item1{
-  padding-top: 200px;
+.sns-item{
+  overflow: hidden;
 }
-.item1 img{
-  width: 300px;
-  height: 200px;
+.sns-item img{
+  transition: all 0.5s;
+}
+.sns-item:hover img{
+  transform: scale(120%);
+}
+.item1{
+  margin-top: 200px;
 }
 .item2{
-  padding-top: 100px;
+  margin-top: 100px;
   width: 300px;
 }
 .item3{
   grid-column: 3 / span 4;
   width: 400px;
 }
-.item3_1{
+.item4{
   margin-left: 100px;
   width: 200px;
 }
-.item6{
-  padding-bottom: 200px;
+.item7{
+  margin-bottom: 200px;
 }
-.item6 img{
-  width: 300px;
-  height: 200px;
-}
+
 /*footer*/
 footer{
   color: #fff;

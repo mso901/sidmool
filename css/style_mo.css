@@ -92,6 +92,9 @@ video {
   align-items: center;
   justify-content: center;
 }
+.sns-item:hover img{
+  transform: scale(100%);
+}
 .sns_img .sns-item {
   margin: 0;
   padding: 0;

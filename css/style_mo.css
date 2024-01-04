@@ -114,6 +114,10 @@ video {
 .sns_text {
   margin-bottom: 10px;
 }
+.sns_img{
+  width: 80%;
+  margin-right: auto;
+}
 .sns-container {
   display: flex;
   align-items: center;

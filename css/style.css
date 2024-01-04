@@ -280,3 +280,23 @@ h2 + p {
   width: 300px;
   height: 200px;
 }
+/*footer*/
+footer{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  background-color: #284738;
+}
+footer p{
+  width: 200px;
+  margin: 30px 100px 0 50px;
+}
+footer li{
+  padding-right: 20px;
+}
+.footer_right{
+  padding: 20px;
+}
+address ul{
+  flex-wrap: wrap;
+}

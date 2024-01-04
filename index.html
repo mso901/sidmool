@@ -1,114 +1,133 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sidmool</title>
+    <link rel="icon" href="./img/header/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/defult.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" media="screen and (max-width:800px)" href="./css/style_mo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/main.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>sidmool</title>
-  <link rel="icon" href="./img/header/favicon.png">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./css/defult.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="js/slide.js"></script>
-  <script src="js/main.js"></script>
-</head>
+  <body>
+    <header class="flex">
+        <h1 class="left">
+          <a href="">
+            <img src="./img/header/logo.png" alt="" />
+          </a>
+        </h1>
+        <nav class="left">
+          <img class="ham" src="img/header/ham.png" alt="주메뉴">
+          <ul class="mainmenu flex">
+            <li>
+              <a href="">상품</a>
+              <ul class="submenu">
+                <li><a href="">스킨케어</a></li>
+                <li><a href="">메이크업</a></li>
+                <li><a href="">바디</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">이벤트</a>
+            </li>
+            <li>
+              <a href="">커뮤니티</a>
+              <ul class="submenu">
+                <li><a href="">공지사항</a></li>
+                <li><a href="">리뷰</a></li>
+                <li><a href="">Q&A</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">브랜드 설명</a>
+            </li>
+          </ul>
+        </nav>
 
-<body>
-  <header>
-    <div class="header_top">
-      <h1 class="flex">
-        <a href="">
-          <img src="./img/header/logo.png" alt="">
-        </a>
-      </h1>
-    </div><!--//header_top-->
-    <nav>
-      <ul class="mainmenu flex">
-        <li>
-          <a href="">상품</a>
-          <ul class="submenu">
-            <li><a href="">스킨케어</a></li>
-            <li><a href="">메이크업</a></li>
-            <li><a href="">바디</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="">이벤트</a>
-        </li>
-        <li>
-          <a href="">커뮤니티</a>
-          <ul class="submenu">
-            <li><a href="">공지사항</a></li>
-            <li><a href="">리뷰</a></li>
-            <li><a href="">Q&A</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="">브랜드 설명</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <div class="swiper main_visual">
-      <ul class="swiper-wrapper">
-        <li class="swiper-slide"><img src="./img/main/main-visual.png" alt=""></li>
-        <li class="swiper-slide"><img src="./img/main/main-visual2.png" alt=""></li>
-      </ul>
-    </div><!--//main_visual-->
-    <section class="best">
-      <div class="inner">
-        <h2>Best Seller</h2>
-        <p>고객님들이 추천하는 제품을 바로 만나보세요</p>
-        <ul class="flex">
-          <li>
-            <a href="">
-              <div>
-                <img src="img/best/best-item1.png" alt="">
-                <div class="item_text">
-                  <p>울트라 수분 로션</p>
-                  <a class="enlarge" href="">자세히 보기</a>
-                </div>
-              </div>
-            </a>
+      <dl class="flex">
+        <dt class="blind">유틸리티</dt>
+        <dd><a href=""><img src="img/header/user.png" alt=""></a></dd>
+        <dd><a href=""><img src="img/header/cart.png" alt=""></a></dd>
+      </dl>
+    </header>
+    <main>
+      <video autoplay muted controls width="100%" height="auto">
+        <source src="img/main/main_video.mp4">
+      </video>
+      <div class="swiper main_visual">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <img src="./img/main/main-visual-mb.png" alt="" />
           </li>
-          <li>
-            <a href="">
-              <div>
-                <img src="img/best/best-item2.png" alt="">
-                <div class="item_text">
-                  <p>시드 넘버 바디크림</p>
-                  <a class="enlarge" href="">자세히 보기</a>
-                </div>
-              </div>
-            </a>
+          <li class="swiper-slide">
+            <img src="./img/main/main-visual-mb2.png" alt="" />
           </li>
-          <li>
-            <a href="">
-              <div>
-                <img src="img/best/best-item3.png" alt="">
-                <div class="item_text">
-                  <p>시드물 무기자차 썬크림</p>
-                  <a class="enlarge" href="">자세히 보기</a>
-                </div>
-              </div>
-            </a>
+          <li class="swiper-slide">
+            <img src="./img/main/main-visual-mb3.png" alt="" />
           </li>
-          <li>
-            <a href="">
-              <div>
-                <img src="img/best/best-item4.png" alt="">
-                <div class="item_text">
-                  <p>그린티 씨드 수분크림</p>
-                  <a class="enlarge" href="">자세히 보기</a>
+        </ul>
+      </div>
+      <!--//main_visual-->
+      <section class="best">
+        <div class="inner">
+          <h2>Best Seller</h2>
+          <p>고객님들이 추천하는 제품을 바로 만나보세요</p>
+          <ul class="flex">
+            <li>
+
+                <div>
+                  <img src="img/best/best-item1.png" alt="" />
+                  <div class="item_text">
+                    <p>울트라 수분 로션</p>
+                    <a class="enlarge" href="#">자세히 보기</a>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </li>
-          <!-- <li>
-            <a href="">
+ 
+            </li>
+            <li>
+
+                <div>
+                  <img src="img/best/best-item2.png" alt="" />
+                  <div class="item_text">
+                    <p>시드 넘버 바디크림</p>
+                    <a class="enlarge" href="">자세히 보기</a>
+                  </div>
+                </div>
+ 
+            </li>
+            <li>
+ 
+                <div>
+                  <img src="img/best/best-item3.png" alt="" />
+                  <div class="item_text">
+                    <p>시드물 무기자차 썬크림</p>
+                    <a class="enlarge" href="">자세히 보기</a>
+                  </div>
+                </div>
+         
+            </li>
+            <li>
+             
+                <div>
+                  <img src="img/best/best-item4.png" alt="" />
+                  <div class="item_text">
+                    <p>그린티 씨드 수분크림</p>
+                    <a class="enlarge" href="">자세히 보기</a>
+                  </div>
+                </div>
+
+            </li>
+            <!-- <li>
+
               <div>
                 <img src="img/best/best-item1.png" alt="">
                 <div class="item_text">
@@ -116,196 +135,228 @@
                   <a href="">자세히 보기</a>
                 </div>
               </div>
-            </a>
+     
           </li> -->
-        </ul>
-      </div><!--//inner-->
-    </section><!--//best-->
-    <section class="recommend">
-      <div class="inner">
-        <div class="recommend_img flex">
-          <div class="recommend_left">
-            <img src="img/recommend/ahmad-ebadi-or6-NuAsC3w-unsplash.jpg" alt="">
-          </div>
-          <div class="recommend_right">
-            <div class="recommend_text">
-              <h3>It's for you</h3>
-              <p>당신에게 추천합니다.</p>
+          </ul>
+        </div>
+        <!--//inner-->
+      </section>
+      <!--//best-->
+      <section class="recommend">
+        <div class="inner flex">
+            <div class="recommend_left">
+              <img
+                src="img/recommend/model1.png"
+                alt=""
+              />
             </div>
-            <ul class="flex">
-              <li>
-                <a href="">
-                  <div>
-                    <img src="img/recommend/recommend-item1.png" alt="">
-                    <div class="item_text">
-                      <p>스테이 스틱 컨실러</p>
-                      <a class="enlarge" href="">자세히 보기</a>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <div>
-                    <img src="img/recommend/recommend-item2.png" alt="">
-                    <div class="item_text">
-                      <p>시그니처 퍼펙트핏 쿠션</p>
-                      <a class="enlarge" href="">자세히 보기</a>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <div>
-                    <img src="img/recommend/recommend-item3.png" alt="">
-                    <div class="item_text">
-                      <p>무스인무드 리퀴드 글로우</p>
-                      <a class="enlarge" href="">자세히 보기</a>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <div>
-                    <img src="img/recommend/recommend-item4.png" alt="">
-                    <div class="item_text">
-                      <p>그린티 씨드 수분크림</p>
-                      <a class="enlarge" href="">자세히 보기</a>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <div>
-                    <img src="img/recommend/recommend-item1.png" alt="">
-                    <div class="item_text">
-                      <p>스테이 스틱 컨실러</p>
-                      <a class="enlarge" href="">자세히 보기</a>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <div>
-                    <img src="img/recommend/recommend-item2.png" alt="">
-                    <div class="item_text">
-                      <p>시그니처 퍼펙트핏 쿠션</p>
-                      <a class="enlarge" href="">자세히 보기</a>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <div>
-                    <img src="img/recommend/recommend-item3.png" alt="">
-                    <div class="item_text">
-                      <p>무스인무드 리퀴드 글로우</p>
-                      <a class="enlarge" href="">자세히 보기</a>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <div>
-                    <img src="img/recommend/recommend-item4.png" alt="">
-                    <div class="item_text">
-                      <p>그린티 씨드 수분크림</p>
-                      <a class="enlarge" href="">자세히 보기</a>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div><!--//recommend_right-->
-        </div><!--//recommend_img-->
-      </div><!--//inner-->
-    </section><!--//recommend-->
-    <section class="promotion">
-      <h2>promotion</h2>
-      <p>시드물을 찾아주시는 고마운 분들께 특별한 혜택을 선사합니다.</p>
-      <div class="swiper event_slide">
-        <ul class="swiper-wrapper">
-          <li class="swiper-slide">
-            <a href="">
-              <img src="img/promotion/banner1.png" alt="">
-              <div class="item_text flex">
-                <p>시드물의 인기템까지 Up to 50% 할인</p>
-                <a class="enlarge" href="">자세히 보기</a>
+            <div class="recommend_right">
+              <div class="recommend_text">
+                <h3>It's for you</h3>
+                <p>당신에게 추천합니다.</p>
               </div>
-            </a>
-          </li>
-          <li class="swiper-slide">
-            <a href="">
-              <img src="img/promotion/banner2.png" alt="">
-              <div class="item_text flex">
-                <p>수분 대 폭발, 할인 대 폭발</p>
-                <a class="enlarge" href="">자세히 보기</a>
-              </div>
-            </a>
-          </li>
-          <li class="swiper-slide">
-            <a href="">
-              <img src="img/promotion/banner3.png" alt="">
-              <div class="item_text flex">
-                <p>베스트 셀링, 시드물 수분한가득 2+1</p>
-                <a class="enlarge" href="">자세히 보기</a>
-              </div>
-            </a>
-          </li>
-          <li class="swiper-slide">
-            <a href="">
-              <img src="img/promotion/banner1.png" alt="">
-              <div class="item_text flex">
-                <p>시드물의 인기템까지 Up to 50% 할인</p>
-                <a class="enlarge" href="">자세히 보기</a>
-              </div>
-            </a>
-          </li>
-          <li class="swiper-slide">
-            <a href="">
-              <img src="img/promotion/banner2.png" alt="">
-              <div class="item_text flex">
-                <p>수분 대 폭발, 할인 대 폭발</p>
-                <a class="enlarge" href="">자세히 보기</a>
-              </div>
-            </a>
-          </li>
-          <li class="swiper-slide">
-            <a href="">
-              <img src="img/promotion/banner3.png" alt="">
-              <div class="item_text flex">
-                <p>베스트 셀링, 시드물 수분한가득 2+1</p>
-                <a class="enlarge" href="">자세히 보기</a>
-              </div>
-            </a>
-          </li>
-        </ul><!--//swiper-wrapper-->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-      </div><!--//event_slide-->
-    </section>
-    <div class="sns">
-      <div class="inner">
-        <div class="sns_left">
+              <ul class="flex">
+                <li>
+          
+                    <div>
+                      <img src="img/recommend/recommend-item1.png" alt="" />
+                      <div class="item_text">
+                        <p>스테이 스틱 컨실러</p>
+                        <a class="enlarge" href="">자세히 보기</a>
+                      </div>
+                    </div>
+           
+                </li>
+                <li>
+               
+                    <div>
+                      <img src="img/recommend/recommend-item2.png" alt="" />
+                      <div class="item_text">
+                        <p>시그니처 퍼펙트핏 쿠션</p>
+                        <a class="enlarge" href="">자세히 보기</a>
+                      </div>
+                    </div>
+           
+                </li>
+                <li>
+          
+                    <div>
+                      <img src="img/recommend/recommend-item3.png" alt="" />
+                      <div class="item_text">
+                        <p>무스인무드 리퀴드 글로우</p>
+                        <a class="enlarge" href="">자세히 보기</a>
+                      </div>
+                    </div>
+         
+                </li>
+                <li>
+      
+                    <div>
+                      <img src="img/recommend/recommend-item4.png" alt="" />
+                      <div class="item_text">
+                        <p>그린티 씨드 수분크림</p>
+                        <a class="enlarge" href="">자세히 보기</a>
+                      </div>
+                    </div>
+   
+                </li>
+                <li>
+   
+                    <div>
+                      <img src="img/recommend/recommend-item1.png" alt="" />
+                      <div class="item_text">
+                        <p>스테이 스틱 컨실러</p>
+                        <a class="enlarge" href="">자세히 보기</a>
+                      </div>
+                    </div>
+             
+                </li>
+                <li>
+        
+                    <div>
+                      <img src="img/recommend/recommend-item2.png" alt="" />
+                      <div class="item_text">
+                        <p>시그니처 퍼펙트핏 쿠션</p>
+                        <a class="enlarge" href="">자세히 보기</a>
+                      </div>
+                    </div>
+              
+                </li>
+                <li>
+                
+                    <div>
+                      <img src="img/recommend/recommend-item3.png" alt="" />
+                      <div class="item_text">
+                        <p>무스인무드 리퀴드 글로우</p>
+                        <a class="enlarge" href="">자세히 보기</a>
+                      </div>
+                    </div>
+  
+                </li>
+                <li>
+           
+                    <div>
+                      <img src="img/recommend/recommend-item4.png" alt="" />
+                      <div class="item_text">
+                        <p>그린티 씨드 수분크림</p>
+                        <a class="enlarge" href="">자세히 보기</a>
+                      </div>
+                    </div>
+           
+                </li>
+              </ul>
+            </div>
+            <!--//recommend_right-->
+        </div>
+        <!--//inner-->
+      </section>
+      <!--//recommend-->
+      <section class="promotion">
+        <h2>promotion</h2>
+        <p>시드물을 찾아주시는 고마운 분들께 특별한 혜택을 선사합니다.</p>
+        <div class="swiper event_slide">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="">
+                <img src="img/promotion/banner3.png" alt="" />
+                <div class="item_text flex">
+                  <p>베스트 아이템 이벤트!! 
+                    <br>인기상품을 할인가로 만나보세요</p>
+                  <a class="enlarge" href="">자세히 보기</a>
+                </div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <img src="img/promotion/banner2.png" alt="" />
+                <div class="item_text flex">
+                  <p>수분 대 폭발, 할인 대 폭발</p>
+                  <a class="enlarge" href="">자세히 보기</a>
+                </div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <img src="img/promotion/banner1.png" alt="" />
+                <div class="item_text flex">
+                  <p>시드물 연구진이 심혈을 기울여 만든 그 아이템
+                    <br>지금 바로 만나보세요
+                  </p>
+                  <a class="enlarge" href="">자세히 보기</a>
+                </div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <img src="img/promotion/banner3.png" alt="" />
+                <div class="item_text flex">
+                  <p>베스트 아이템 이벤트!! 
+                    <br>인기상품을 할인가로 만나보세요</p>
+                  <a class="enlarge" href="">자세히 보기</a>
+                </div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <img src="img/promotion/banner2.png" alt="" />
+                <div class="item_text flex">
+                  <p>수분 대 폭발, 할인 대 폭발</p>
+                  <a class="enlarge" href="">자세히 보기</a>
+                </div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <img src="img/promotion/banner1.png" alt="" />
+                <div class="item_text flex">
+                  <p>시드물 연구진이 심혈을 기울여 만든 그 아이템
+                    <br>지금 바로 만나보세요
+                  </p>
+                  <a class="enlarge" href="">자세히 보기</a>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!--//swiper-wrapper-->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <!--//event_slide-->
+      </section>
+      <section class="sns">
+        <div class="inner">
           <div class="sns_text">
             <h3>THE SIDMOOL</h3>
             <p>follow me @sidmool</p>
           </div>
-          <div class="img_wrap"></div>
-        </div>
-        <div class="sns_right">
-          <div class="img_wrap"></div>
-        </div>
-      </div>
-    </div>
-  </main>
-</body>
-
+          <div class="sns_img swiper">
+          <div class="sns-container swiper-wrapper">
+            <div class="sns-item item1 swiper-slide">
+              <img src="img/sns/sns4.png" alt="">
+            </div>
+            <div class="sns-item item2 swiper-slide">
+              <img src="img/sns/sns2.png" alt="">
+            </div>
+            <div class="sns-item item3 swiper-slide">
+              <img src="img/sns/sns5.png" alt="">
+            </div>
+            <div class="sns-item item3_1 swiper-slide">
+              <img src="img/sns/sns6.png" alt="">
+            </div>
+            <div class="sns-item item4 swiper-slide">
+              <img src="img/sns/sns4.png" alt="">
+            </div>
+            <div class="sns-item item5 swiper-slide">
+              <img src="img/sns/sns5.png" alt="">
+            </div>
+            <div class="sns-item item6 swiper-slide">
+              <img src="img/sns/sns6.png" alt="">
+            </div>
+          </div><!--//sns-container-->
+        </div><!--//swiper-->
+        </div><!--//inner-->
+      </section><!--//sns-->
+    </main>
+  </body>
 </html>

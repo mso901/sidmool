@@ -80,7 +80,8 @@ video {
 }
 .recommend_right ul {
   margin: auto;
-  width: 90%;
+  width: 80%;
+  text-align: center;
 }
 /*promotion*/
 .promotion {
@@ -133,6 +134,9 @@ video {
 /*footer*/
 footer {
   flex-direction: column;
+}
+footer p{
+  width: 100px;
 }
 .footer_right > ul {
   flex-direction: column;

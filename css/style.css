@@ -242,6 +242,7 @@ h2 + p {
 /*sns*/
 .sns{
   padding: 200px 0;
+  background-color: #f9f4f3;
 }
 .sns_text{
   margin-bottom: -80px;

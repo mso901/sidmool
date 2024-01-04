@@ -58,7 +58,7 @@ header nav ul li {
   margin-right: 100px;
 }
 header.on {
-  background-color: #284738;
+  background-color: rgba(106, 137, 123, 0.9);
 }
 
 header.on nav {
@@ -288,14 +288,15 @@ footer{
   color: #fff;
   font-size: 14px;
   font-weight: 300;
+  line-height: 30px;
   background-color: #284738;
 }
 footer p{
-  width: 200px;
+  width: 300px;
   margin: 30px 100px 0 50px;
 }
 footer li{
-  padding-right: 20px;
+  padding-right: 40px;
 }
 .footer_right{
   padding: 20px;

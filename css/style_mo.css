@@ -11,6 +11,10 @@ h2 + p {
   text-align: left;
 }
 /*header*/
+header{
+  display: flex;
+  justify-content: space-between;
+}
 header h1 {
   order: 1;
 }

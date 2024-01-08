@@ -42,6 +42,7 @@ video {
 
 .main_visual .main_img_mo{
   display: block;
+  width: 100vw;
 }
 /*best*/
 .best {

@@ -58,7 +58,7 @@ img {
 header {
   position: fixed;
   z-index: 2;
-  width: 100%;
+  width: 100vw;
   height: 80px;
   padding-top: 10px;
   background-color: transparent;

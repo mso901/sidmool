@@ -21,7 +21,39 @@ img {
 .left {
   float: left;
 }
+.slick-arrow {
+  z-index: 50;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  font-family: xeicon;
+  font-size: 0;
+  background-color: transparent;
 
+}
+
+.slick-arrow:before {
+  color: #284738;
+  font-size: 30px;
+}
+
+.slick-prev {
+  left: -40px;
+}
+
+.slick-prev:before {
+  content: "\e93b";
+}
+
+.slick-next {
+  right: -50px;
+}
+
+.slick-next:before {
+  content: "\e93e";
+}
 /*header*/
 header {
   position: fixed;
@@ -49,14 +81,15 @@ nav .ham {
 }
 header .mainmenu {
   margin: auto;
-  padding-top: 35px;
+  margin-top: 35px;
+  height: 40px;
   color: #fff;
   font-size: 14px;
   font-weight: 300;
 }
 header nav ul > li {
   position: relative;
-  margin-right: 10px;
+padding: 0 20px;
 }
 header.on {
   background-color: rgba(54, 125, 94, 0.9);
@@ -73,13 +106,14 @@ header nav ul li:hover>.submenu {
   display: block;
 }
 header nav ul li:hover>a {
-  color: #beb7b7;
+  color: burlywood;
 }
 .submenu {
   position: absolute;
-  top: 20px;
+  top: 35px;
   left: 0;
   display: none;
+  padding-bottom: 10px;
   word-break: keep-all;
 background-color: rgba(54, 125, 94, 0.9)
 }
@@ -96,6 +130,7 @@ header dl dd:nth-child(2) img {
 header dl dd img {
   width: 40px;
 }
+/*main*/
 /*main_visual*/
 .main_visual {
   position: relative;
@@ -114,7 +149,7 @@ header dl dd img {
   /* -webkit-text-stroke-color: #fff !important;
   -webkit-text-stroke: 5px; */
 }
-.main_visual .fade {
+.main_visual .main_img_mo {
   display: none;
 }
 
@@ -127,7 +162,7 @@ header dl dd img {
     opacity: 1;
   }
 }
-/*main*/
+
 section {
   padding: 100px 0;
 }
@@ -145,8 +180,11 @@ h2 + p {
 .best {
   height: auto;
 }
+.best_list{
+  justify-content: center;
+}
 .best ul div img {
-  width: 300px;
+  width:90%;
 }
 .best .item_text {
   margin-left: 50px;
@@ -264,15 +302,16 @@ h2 + p {
 }
 .promotion .item_text {
   justify-content: space-between;
+  padding: 20px 0;
   text-indent: 0;
 }
 .promotion .item_text p {
   font-size: 30px;
-  padding: 20px 0;
 }
 .promotion .item_text .enlarge {
-  margin: 25px 20px;
+  width: 100px;
   font-size: 20px;
+  text-align: right;
 }
 .promotion .item_text .enlarge:hover {
   color: #fff;
@@ -316,10 +355,11 @@ h2 + p {
   overflow: hidden;
 }
 .sns-item img {
+  display: block;
   transition: all 0.5s;
 }
 .sns-item:hover img {
-  transform: scale(120%);
+  transform: scale(110%);
 }
 .item1 {
   margin-top: 200px;

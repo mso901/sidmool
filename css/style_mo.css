@@ -33,30 +33,21 @@ header dl {
 }
 /*main_visual*/
 .main_visual p {
+  display: none;
   font-size: 50px;
 }
 video {
   display: none;
 }
 
-.main_visual .fade {
+.main_visual .main_img_mo{
   display: block;
-  position: relative;
-  height: 100vw;
-}
-
-.fade li {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vw;
 }
 /*best*/
 .best {
   height: auto;
 }
-.best_text{}
+
 .best ul {
   flex-wrap: wrap;
   gap: 80px 0;
@@ -67,8 +58,8 @@ video {
 .best ul div img {
   width: 100%;
 }
-.item_text {
-  text-indent: 0;
+.best .item_text {
+  margin-left: 10%;
 }
 /*recommend*/
 .recommend > div {

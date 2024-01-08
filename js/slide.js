@@ -2,15 +2,15 @@
 
 $(function () {
   //main_visual
-  var swiper = new Swiper(".fade", {
-    spaceBetween: 30,
-    loop: true,
-    effect: "fade",
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
-  });
+  // var swiper = new Swiper(".fade", {
+  //   spaceBetween: 30,
+  //   loop: true,
+  //   effect: "fade",
+  //   autoplay: {
+  //     delay: 2000,
+  //     disableOnInteraction: false,
+  //   },
+  // });
 
   // let i = 0;
   // function slide() {
@@ -41,6 +41,11 @@ $(function () {
         effect: "cards",
         grabCursor: true,
         loop: true,
+      });
+      $(".recommend_list").slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
       });
     } else {
       var swiperEventSlide = new Swiper(".event_slide", {

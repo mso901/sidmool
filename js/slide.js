@@ -62,12 +62,13 @@ $(function () {
           clickable: true,
         },
       });
-    } //else
-  } //function
+    }; //else
+  }; //function
 
   applySwiper();
 
   $(window).resize(function () {
     applySwiper();
   }); //slide
+  
 });
